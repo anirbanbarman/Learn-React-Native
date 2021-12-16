@@ -7,6 +7,9 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import ComponentScreen from './src/screens/ComponentScreen';
 import ListScreen from './src/screens/ListScreen';
 import ImageScreen from './src/screens/ImageScreen';
+import CounterScreen from './src/screens/CounterScreen';
+import ColorScreen from './src/screens/ColorScreen';
+import SquareScreen from './src/screens/SquareScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -14,11 +17,16 @@ export default function App() {
   return (
 
     <NavigationContainer >
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="Home" screenOptions={{title:"App"}} >
       <Stack.Screen name="Home"  style={styles.container} component={HomeScreen} />
       <Stack.Screen name="Component"  style={styles.container} component={ComponentScreen} />
       <Stack.Screen name="List"  style={styles.container} component={ListScreen} />
       <Stack.Screen name="Image"  style={styles.container} component={ImageScreen} />
+      <Stack.Screen name="Counter"  style={styles.container} component={CounterScreen} />
+      <Stack.Screen name="Color"  style={styles.container} component={ColorScreen}/>
+      <Stack.Screen name="Square"  style={styles.container} component={SquareScreen}/>
+
+
 
 
 
