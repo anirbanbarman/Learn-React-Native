@@ -20,6 +20,20 @@ export default function HomeScreen({navigation }) {
 
          <Text>Go to Image</Text> 
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate('Counter', { name: 'Jane' })}>
+
+         <Text>Go to Counter Demo</Text> 
+      </TouchableOpacity>
+
+      <TouchableOpacity onPress={()=>navigation.navigate('Color', { name: 'Jane' })}>
+
+         <Text>Go to Color</Text> 
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate('Square', { name: 'Jane' })}>
+
+<Text>Go to Square Screen</Text> 
+</TouchableOpacity>
+
      
      
     </View>
