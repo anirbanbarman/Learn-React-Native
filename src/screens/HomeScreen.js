@@ -15,6 +15,11 @@ export default function HomeScreen({navigation }) {
 
          <Text>Go to List List</Text> 
       </TouchableOpacity>
+
+      <TouchableOpacity onPress={()=>navigation.navigate('Image', { name: 'Jane' })}>
+
+         <Text>Go to Image</Text> 
+      </TouchableOpacity>
      
      
     </View>
