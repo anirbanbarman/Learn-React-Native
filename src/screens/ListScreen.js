@@ -1,7 +1,8 @@
  
 import React from 'react';
-import { StyleSheet, Text, View,FlatList} from 'react-native';
-import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import { StyleSheet,TouchableOpacity, Text, View,FlatList,Button} from 'react-native';
+
+
 
 
 export default function ListScreen() {
@@ -28,6 +29,14 @@ export default function ListScreen() {
 
       }}
       />
+      <Button 
+      onPress={()=>alert("hello")}
+      title='Goto Component screen'/>
+
+      <TouchableOpacity onPress={()=>alert("hi")}>
+
+         <Text>Go to List Demo </Text> 
+      </TouchableOpacity>
      
     </View>
   );
