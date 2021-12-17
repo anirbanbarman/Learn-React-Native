@@ -39,6 +39,11 @@ export default function HomeScreen({ navigation }) {
         <Text>Go to Text Screen</Text>
       </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => navigation.navigate('Box')}>
+
+        <Text>Go to BoxScreen</Text>
+      </TouchableOpacity>
+
 
     </View>
   );
