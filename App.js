@@ -11,6 +11,7 @@ import CounterScreen from './src/screens/CounterScreen';
 import ColorScreen from './src/screens/ColorScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 
 const Stack = createNativeStackNavigator();
@@ -27,6 +28,8 @@ export default function App() {
       <Stack.Screen name="Color"  style={styles.container} component={ColorScreen}/>
       <Stack.Screen name="Square"  style={styles.container} component={SquareScreen}/>
       <Stack.Screen name="Text"  style={styles.container} component={TextScreen}/>
+      <Stack.Screen name="Box"  style={styles.container} component={BoxScreen}/>
+
 
 
 
